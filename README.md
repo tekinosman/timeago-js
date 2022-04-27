@@ -40,6 +40,9 @@ Make sure you add `<language>_<territory>` to export.
 
 Then either open an issue or submit a pull request.
 
+## TODO
+- Improve code and readme, refactor unnecessarily smart parts of the former into "dumber" ones
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
