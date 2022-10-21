@@ -2,7 +2,7 @@
 
 > **timeago-js** is a small (<1 kb) Javascript utility used to automatically update date elements with user friendly statements (just now, n seconds ago etc.). 
 
-It supports multilingual support.
+It has multilingual support.
 
 ## How to install
 
@@ -39,9 +39,6 @@ Where language is an [ISO 639 language code](https://en.wikipedia.org/wiki/List_
 Make sure you add `<language>_<territory>` to export.
 
 Then either open an issue or submit a pull request.
-
-## TODO
-- Improve code and readme, refactor unnecessarily smart parts of the former into "dumber" ones
 
 ## License
 
