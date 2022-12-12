@@ -1,8 +1,6 @@
 # timeago-js
 
-> **timeago-js** is a small (<1 kb) Javascript utility used to automatically update date elements with user friendly statements (just now, n seconds ago etc.). 
-
-It has multilingual support.
+**timeago-js** is a small (<1 kb) Javascript library with multilingual support that automatically updates date elements with user friendly statements, such as "just now", "n seconds ago" etc. It offers mul 
 
 ## How to install
 
@@ -10,19 +8,19 @@ It has multilingual support.
 
 2. Add `type="module"` to the script tag, and `import {timeago} from "./helpers/timeago-js/timeago.js"` to the js file.
 
-## How to use
+## Usage
 
-Calling `timeago()` by default:
-- targets all elements with `time` class
-- gets the timestamp value (in seconds) from `data-timestamp` attribute
-- sets the refresh rate to 30 seconds
-- sets the language to English
+By default, the `timeago()` function:
+- Targets all elements with the `time` class.
+- Retrieves the timestamp value (in seconds) from the `data-timestamp` attribute of the targeted elements.
+- Sets the refresh rate to 30 seconds
+- Sets the language to English
 
 Custom values can be set with: `timeago(<class_name>, <refresh_rate>, <language>)`.
 
-## Adding languages
+## Adding a language
 
-To add a language, add a simple array with the right locale code to [languages.js](languages.js):
+To include a new language, add a new array containing the localized string to [languages.js](languages.js):
 
     const <language>_<territory> = [
         "<now|one second ago>",    "<seconds ago>",
@@ -34,7 +32,10 @@ To add a language, add a simple array with the right locale code to [languages.j
         "<one year ago>",          "<years ago>"
       ];
 
-Where language is an [ISO 639 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) and territory is an [ISO 3166 country code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes). Some examples are: `it_IT`, `en_GB`, `fr_FR`.
+Where:
+- **language** is an [ISO 639 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- **territory** is an [ISO 3166 country code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes). Some examples being `it_IT`, `en_GB`, `fr_FR`.
+- *odd* values are the singular and *even* values are the plural form
 
 Make sure you add `<language>_<territory>` to export.
 
